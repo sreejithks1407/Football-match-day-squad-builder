@@ -18,10 +18,13 @@ jobs:
       with:
         server_adress: smtp.gmail.com
         server_port: 587
-        username: ${{ secrets.SMTP_USERNAME }}
-        password: ${{ secrets.SMTP_PASSWORD }}
+        # username: ${{ secrets.SMTP_USERNAME }}
+        # password: ${{ secrets.SMTP_PASSWORD }}
+        username: sreejithks1407@gmail.com
+        password: Sreejith@98
         subject: Push to main branch completed
         body: |
           "Code push to the main branch has been successfully completed!
         to: sreejithks1407@gmail.com
-        from: ${{ secrets.EMAIL_FROM }}
+        # from: ${{ secrets.EMAIL_FROM }}
+        from: sreejithks1407@gmail.com
