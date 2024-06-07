@@ -1,0 +1,27 @@
+name: Notify on Push to Main
+
+on: 
+  push:
+    branches:
+      - main
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Send notification email
+      uses: dawidd6/action-send-mail@v3
+      with:
+        server_adress: smtp.gmail.com
+        server_port: 587
+        username: ${{ secrets.SMTP_USERNAME }}
+        password: ${{ secrets.SMTP_PASSWORD }}
+        subject: Push to main branch completed
+        body: |
+          "Code push to the main branch has been successfully completed!
+        to: sreejithks1407@gmail.com
+        from: ${{ secrets.EMAIL_FROM }}
