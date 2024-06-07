@@ -1,7 +1,7 @@
 import random
 
-available_midfielders = ['Luka Modric', 'Toni Kroos', 'Federico Valverde',
-                         'Eduardo Camavinga', 'Aurelium Tchoumeni']
+available_midfielders = ['Luka Modric', 'Federico Valverde',
+                         'Eduardo Camavinga', 'Aurelien Tchouameni', 'Jude Bellingham', 'Adra Guler', 'Lucas Vazquez', 'Dani Ceballos']
 
 available_midfielders_number = len(available_midfielders)
 selected_numbers = []
