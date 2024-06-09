@@ -1,16 +1,13 @@
 import random
 
-available_forwards_list = ['Kylian Mbappe',
-                           'Rodrygo', 'Vinicius Junior', 'Endrick', 'Joselu', 'Brahim Diaz']
 
-
-def choose_forwards(available_forwards):
+def choose_forwards(available_forwards, total_forwards_needed):
 
     available_forwards_number = len(available_forwards)
     selected_numbers = []
 
-    total_forwards_needed = int(input(
-        "Provide the number of midfielders needed in your squad for today's match \n"))
+    # total_forwards_needed = int(input(
+    #     "Provide the number of forwards needed in your squad for today's match \n"))
 
     while (total_forwards_needed > available_forwards_number):
         total_forwards_needed = int(input(
@@ -31,5 +28,5 @@ def choose_forwards(available_forwards):
     return my_forwards_combinations_for_todays_game
 
 
-forwards_for_match_day = choose_forwards(available_forwards_list)
-print(forwards_for_match_day)
+# forwards_for_match_day = choose_forwards(available_forwards_list)
+# print(forwards_for_match_day)

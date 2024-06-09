@@ -1,16 +1,13 @@
 import random
 
-available_defenders_list = ['Dani Carvajal',
-                            'Nacho', 'Ferland Mendy', 'Antonio Rudiger', 'Eder Militao', 'David Alaba']
 
-
-def choose_forwards(available_defenders):
+def choose_defenders(available_defenders, total_defenders_needed):
 
     available_defenders_number = len(available_defenders)
     selected_numbers = []
 
-    total_defenders_needed = int(input(
-        "Provide the number of defenders needed in your squad for today's match \n"))
+    # total_defenders_needed = int(input(
+    #     "Provide the number of defenders needed in your squad for today's match \n"))
 
     while (total_defenders_needed > available_defenders_number):
         total_defenders_needed = int(input(
@@ -31,5 +28,5 @@ def choose_forwards(available_defenders):
     return my_defenders_combinations_for_todays_game
 
 
-defenders_for_match_day = choose_forwards(available_defenders_list)
-print(defenders_for_match_day)
+# defenders_for_match_day = choose_defenders(available_defenders_list)
+# print(defenders_for_match_day)
