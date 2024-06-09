@@ -1,16 +1,13 @@
 import random
 
-available_midfielders_list = ['Luka Modric', 'Federico Valverde',
-                              'Eduardo Camavinga', 'Aurelien Tchouameni', 'Jude Bellingham', 'Adra Guler', 'Lucas Vazquez', 'Dani Ceballos']
 
-
-def choose_midfielder(available_midfielders):
+def choose_midfielder(available_midfielders, total_mifielders_needed):
 
     available_midfielders_number = len(available_midfielders)
     selected_numbers = []
 
-    total_mifielders_needed = int(input(
-        "Provide the number of midfielders needed in your squad for today's match \n"))
+    # total_mifielders_needed = int(input(
+    #     "Provide the number of midfielders needed in your squad for today's match \n"))
 
     while (total_mifielders_needed > available_midfielders_number):
         total_mifielders_needed = int(input(
@@ -31,5 +28,5 @@ def choose_midfielder(available_midfielders):
     return my_midfielder_combinations_for_todays_game
 
 
-midfielders_for_match_day = choose_midfielder(available_midfielders_list)
-print(midfielders_for_match_day)
+# midfielders_for_match_day = choose_midfielder(available_midfielders_list)
+# print(midfielders_for_match_day)
