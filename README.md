@@ -1,4 +1,3 @@
-# LearnGitHubActions
-This repository is created at first to learn just GitHub Actions.
+# Football match day squad builder
 
-But through this repository, now I'm going to create a project focused on creating match day squad for football teams.
+This project picks 11 players for your match day based on your formation from your squad.
